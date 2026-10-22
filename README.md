@@ -6,4 +6,4 @@ Le skill est installé dans `.claude/skills/42/` : il est chargé automatiquemen
 
 Pour l'utiliser ailleurs, copiez le dossier dans `~/.claude/skills/42/` (skill personnel) ou dans `.claude/skills/42/` d'un autre projet.
 
-Exemples : `/42 doc --work malloc`, `/42 review ./libft`, `/42 exam`, `/42 help`.
+Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python`, `/42 err "<message>"`, `/42 vs list tuple`, `/42 cheat gdb`, `/42 test ft_atoi`, `/42 q quel header pour write`, `/42 review ./libft`, `/42 exam`, `/42 help`.

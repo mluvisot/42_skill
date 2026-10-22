@@ -27,6 +27,9 @@ Un usage réaliste, comme on l'écrit dans du vrai code : gestion d'erreur, nett
 ### À savoir (facultatif)
 1–3 pièges ou détails qui font perdre du temps : un comportement surprenant, une erreur classique, une différence entre plateformes ou versions. Une ligne chacun.
 
+### Avec `--from <langage>`
+Sous la Syntaxe, une ligne « En <langage> : … » donne l'équivalent (ou dit qu'il n'y en a pas). Dans À savoir, au moins un piège de traduction : ce qui se ressemble dans les deux langages mais ne se comporte pas pareil. Exemple pour `--from c` sur les listes Python : « En C : un tableau de taille fixe (ou `malloc` + `realloc`) ; ici la taille s'adapte toute seule, et `b = a` ne copie pas ».
+
 Tu peux t'écarter de ce format quand le sujet s'y prête mal : une commande peut demander un tableau d'options, une notion peut se passer de prototype. Le but reste une réponse qu'on lit en moins d'une minute et qu'on peut recopier ou adapter directement.
 
 ## Règles
