@@ -50,4 +50,4 @@ Après une nouvelle antisèche ou une mise à jour, si le dossier du skill est m
 3. ajoute ou mets à jour sa ligne dans `cheats/INDEX.md`, avec 2–3 autres façons de la demander ;
 4. si le skill est dans un dépôt git, dis-le en une ligne et propose de commiter et pousser : sinon, la fiche disparaît avec la session.
 
-Si le dossier n'est pas modifiable (skill installé dans un compte), propose plutôt d'envoyer l'antisèche comme fichier `<thème>.md` à l'étudiant.
+Si le dossier n'est pas modifiable (skill installé dans un compte), ou si le skill est installé comme plugin (son chemin contient `/.claude/plugins/` : le dossier est remplacé à chaque mise à jour), propose plutôt d'envoyer l'antisèche comme fichier `<thème>.md` à l'étudiant.
