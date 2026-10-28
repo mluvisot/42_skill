@@ -1,11 +1,13 @@
 # Base de connaissances — règles d'usage
 
-But : répondre juste en lisant le moins possible. Usage personnel de l'étudiant uniquement : ne jamais publier ni partager ce contenu (pas d'artefact public).
+But : répondre juste en lisant le moins possible.
+
+Le skill est public, mais les documents de 42 (sujets PDF de l'intra, texte de la Norme) ne le sont pas : ils restent sur la machine de l'étudiant. `sources/` et `projets/` sont ignorés par git ; ne les commite jamais et n'en publie jamais le contenu (pas d'artefact public).
 
 ## Lire
 1. Lis `INDEX.md` (court), puis **seulement** la fiche utile à la demande. Pour une question précise, cherche la section (Grep) au lieu de lire toute la fiche.
 2. Chaque fiche commence par une section **Essentiel** : lis-la d'abord ; ne descends dans le détail que si la réponse en dépend.
-3. **Point critique ou ambigu** (ce qui peut coûter la note : fichiers à rendre, fonctions autorisées, sortie exacte, limites chiffrées, règle de la Norme contestée) : relis la page indiquée dans la source originale (`sources/`, ou le PDF si l'étudiant l'a fourni) avant d'affirmer.
+3. **Point critique ou ambigu** (ce qui peut coûter la note : fichiers à rendre, fonctions autorisées, sortie exacte, limites chiffrées, règle de la Norme contestée) : relis la page indiquée dans la source originale (`sources/` si elle y est, sinon le PDF fourni par l'étudiant ; pour la Norme, le dossier `pdf/` de https://github.com/42School/norminette) avant d'affirmer.
 4. **L'outil prime sur la fiche** : `norminette` prime sur `norm.md`, une compilation ou un test réel prime sur ce qu'une fiche annonce.
 5. **Fiche manquante** : dis-le en une ligne, réponds avec ce que tu sais en le signalant comme non vérifié, et propose d'ajouter la source.
 
@@ -14,7 +16,7 @@ But : répondre juste en lisant le moins possible. Usage personnel de l'étudian
 - Si l'étudiant indique une version de sujet plus récente que celle de la fiche, la fiche est périmée : dis-le et demande le nouveau PDF.
 
 ## Ajouter une fiche projet (`projets/<projet>.md`)
-À partir d'un sujet PDF fourni par l'étudiant. Format :
+À partir d'un sujet PDF fourni par l'étudiant. Si le skill est installé comme plugin (son chemin contient `/.claude/plugins/`), son dossier est remplacé à chaque mise à jour : propose plutôt d'envoyer la fiche comme fichier à l'étudiant. Format :
 
 ```
 # <projet> — fiche

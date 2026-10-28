@@ -1,6 +1,6 @@
 # La Norme de 42 — v4.1 (fiche)
 
-Source : Norme v4.1, dépôt officiel https://github.com/42School/norminette, dossier `pdf/` (récupérée le 22.10.2026). Texte original : `references/kb/sources/norme_v4.1_fr.txt` ; chaque section ci-dessous indique sa page, à relire en cas de doute ou de contestation.
+Source : Norme v4.1, dépôt officiel https://github.com/42School/norminette, dossier `pdf/` (récupérée le 22.10.2026). Le texte original n'est pas distribué avec le skill : chaque section ci-dessous indique sa page, à relire dans le PDF officiel en cas de doute ou de contestation (l'étudiant peut le placer dans `references/kb/sources/`, qui reste local).
 
 ## Essentiel
 - `norminette` fait foi sur ce qu'elle contrôle (sauf règle locale du campus). Si elle est disponible, lance-la ; cette fiche sert à expliquer les erreurs et à vérifier le reste.

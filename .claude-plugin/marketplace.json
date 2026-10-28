@@ -1,0 +1,12 @@
+{
+  "name": "mluvisot-42",
+  "description": "Le skill 42 de mluvisot",
+  "owner": { "name": "mluvisot", "url": "https://github.com/mluvisot" },
+  "plugins": [
+    {
+      "name": "42",
+      "source": "./",
+      "description": "Assistant pédagogique pour l'École 42 : leçons, revue Norm, soutenance, examens, debug."
+    }
+  ]
+}
