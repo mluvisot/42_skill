@@ -2,7 +2,7 @@
 
 Skill Claude Code d'assistance pédagogique pour l'École 42 (`/42 <mode> [options] <sujet>`) : leçons, revue Norm et tests, simulation de soutenance, entraînement aux examens, debug, antisèches… Il explique et fait comprendre plutôt que de donner des solutions toutes faites.
 
-Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python`, `/42 err "<message>"`, `/42 vs list tuple`, `/42 cheat gdb`, `/42 test ft_atoi`, `/42 q quel header pour write`, `/42 review ./libft`, `/42 exam`, `/42 help`.
+Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python`, `/42 err "<message>"`, `/42 vs list tuple`, `/42 cheat gdb`, `/42 test ft_atoi`, `/42 q quel header pour write`, `/42 review ./libft`, `/42 summary --exercice ex03`, `/42 summary --project minishell`, `/42 exam`, `/42 help`.
 
 ## Installation
 
