@@ -11,7 +11,7 @@ Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python
 Dans une session Claude Code :
 
 ```
-/plugin marketplace add mluvisot/42-skill
+/plugin marketplace add mluvisot/42_skill
 /plugin install 42@mluvisot-42
 ```
 
@@ -24,12 +24,12 @@ Sans clé SSH GitHub sur ta machine, lance Claude Code avec `CLAUDE_CODE_PLUGIN_
 ### Comme skill personnel (commande `/42` sans préfixe)
 
 ```sh
-git clone https://github.com/mluvisot/42-skill.git ~/.claude/42-skill
+git clone https://github.com/mluvisot/42_skill.git ~/.claude/42_skill
 mkdir -p ~/.claude/skills
-ln -s ~/.claude/42-skill/.claude/skills/42 ~/.claude/skills/42
+ln -s ~/.claude/42_skill/.claude/skills/42 ~/.claude/skills/42
 ```
 
-**Mettre à jour** : `git -C ~/.claude/42-skill pull`.
+**Mettre à jour** : `git -C ~/.claude/42_skill pull`.
 
 Dans ce dépôt lui-même, le skill est chargé automatiquement depuis `.claude/skills/42/`.
 

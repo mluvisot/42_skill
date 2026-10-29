@@ -3,8 +3,8 @@
   "displayName": "École 42",
   "description": "Assistant pédagogique pour l'École 42 : leçons, revue Norm, soutenance, examens, debug.",
   "author": { "name": "mluvisot", "url": "https://github.com/mluvisot" },
-  "homepage": "https://github.com/mluvisot/42-skill",
-  "repository": "https://github.com/mluvisot/42-skill",
+  "homepage": "https://github.com/mluvisot/42_skill",
+  "repository": "https://github.com/mluvisot/42_skill",
   "license": "MIT",
   "keywords": ["42", "ecole-42", "norminette", "piscine", "pedagogie"],
   "skills": ["./.claude/skills/"]
