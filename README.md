@@ -8,6 +8,22 @@ Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python
 
 ## Installation
 
+### Dans le chat claude.ai (le plus simple)
+
+1. Télécharge **[42-skill.zip](https://github.com/mluvisot/42_skill/releases/latest/download/42-skill.zip)**.
+2. Sur claude.ai : **Paramètres → Capacités**, active **Exécution de code / création de fichiers**.
+3. Dans **Skills**, clique **Importer un skill** et choisis le ZIP.
+
+Écris ensuite `/42 help`, ou parle simplement de la Norm, de libft, d'un examen… Dans le chat, `/42 review` n'a pas `norminette` ni accès à ta machine : colle ton code ou joins les fichiers. Pour mettre à jour, retélécharge le ZIP et réimporte-le.
+
+### Dans Claude Code, en une commande
+
+```sh
+mkdir -p ~/.claude/skills && curl -fsSL https://github.com/mluvisot/42_skill/releases/latest/download/42-skill.zip -o /tmp/42-skill.zip && unzip -oq /tmp/42-skill.zip -d ~/.claude/skills
+```
+
+La commande `/42` est alors disponible dans tous tes projets. Relance la même commande pour mettre à jour.
+
 ### Comme plugin (recommandé : mises à jour en une commande)
 
 Dans une session Claude Code :
@@ -23,7 +39,7 @@ Le skill s'appelle alors `/42:42 <mode> …` (préfixe du plugin), et Claude le 
 
 Sans clé SSH GitHub sur ta machine, lance Claude Code avec `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1`.
 
-### Comme skill personnel (commande `/42` sans préfixe)
+### Comme skill personnel, avec git (commande `/42` sans préfixe)
 
 ```sh
 git clone https://github.com/mluvisot/42_skill.git ~/.claude/42_skill
