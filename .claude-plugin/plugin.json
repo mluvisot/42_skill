@@ -7,5 +7,5 @@
   "repository": "https://github.com/mluvisot/42_skill",
   "license": "MIT",
   "keywords": ["42", "ecole-42", "norminette", "piscine", "pedagogie"],
-  "skills": ["./.claude/skills/"]
+  "skills": ["./skills/"]
 }

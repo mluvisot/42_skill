@@ -2,6 +2,8 @@
 
 Skill Claude Code d'assistance pédagogique pour l'École 42 (`/42 <mode> [options] <sujet>`) : leçons, revue Norm et tests, simulation de soutenance, entraînement aux examens, debug, antisèches… Il explique et fait comprendre plutôt que de donner des solutions toutes faites.
 
+📂 **Le skill est ici : [`skills/42/`](skills/42/)** — point d'entrée [`SKILL.md`](skills/42/SKILL.md), modes dans [`references/`](skills/42/references/), antisèches dans [`cheats/`](skills/42/cheats/).
+
 Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python`, `/42 err "<message>"`, `/42 vs list tuple`, `/42 cheat gdb`, `/42 test ft_atoi`, `/42 q quel header pour write`, `/42 review ./libft`, `/42 summary --exercice ex03`, `/42 summary --project minishell`, `/42 exam`, `/42 help`.
 
 ## Installation
@@ -26,12 +28,12 @@ Sans clé SSH GitHub sur ta machine, lance Claude Code avec `CLAUDE_CODE_PLUGIN_
 ```sh
 git clone https://github.com/mluvisot/42_skill.git ~/.claude/42_skill
 mkdir -p ~/.claude/skills
-ln -s ~/.claude/42_skill/.claude/skills/42 ~/.claude/skills/42
+ln -s ~/.claude/42_skill/skills/42 ~/.claude/skills/42
 ```
 
 **Mettre à jour** : `git -C ~/.claude/42_skill pull`.
 
-Dans ce dépôt lui-même, le skill est chargé automatiquement depuis `.claude/skills/42/`.
+Dans ce dépôt lui-même, le skill est chargé automatiquement depuis `.claude/skills/42/` (lien vers `skills/42/`).
 
 ## Documents de 42
 
