@@ -1,0 +1,34 @@
+# Publie skills/42 en ZIP (42-skill.zip) dans la release « skill », à chaque
+# modification du skill sur main. Lien stable :
+# https://github.com/mluvisot/42_skill/releases/latest/download/42-skill.zip
+name: Publier le ZIP du skill
+
+on:
+  push:
+    branches: [main]
+    paths: ["skills/42/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Construire 42-skill.zip
+        run: git archive --format=zip --prefix=42/ -o 42-skill.zip HEAD:skills/42
+
+      - name: Publier dans la release « skill »
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="ZIP du skill 42 (commit ${GITHUB_SHA::7}). Voir le README pour l'installation."
+          if gh release view skill >/dev/null 2>&1; then
+            gh release upload skill 42-skill.zip --clobber
+            gh release edit skill --notes "$notes" --latest
+          else
+            gh release create skill 42-skill.zip --title "Skill 42" --notes "$notes" --latest
+          fi
