@@ -7,14 +7,15 @@ But : l'étudiant veut **apprendre un sujet** (« /42 doc les file descriptors �
 `doc` accepte trois options, dans n'importe quel ordre, placées avant le sujet (reconnais-les aussi si elles sont ailleurs dans les arguments, et retire-les du sujet) :
 
 ```
-/42 doc [--beginner | --intermediate | --expert] [--work] [--web] <sujet>
+/42 doc [--beginner | --intermediate | --expert] [--prof 0-3] [--work] [--web] <sujet>
 ```
 
-- **Niveau** : `--intermediate` par défaut (détails ci-dessous).
+- **Niveau** : évalué par un court diagnostic, `--intermediate` à défaut (détails ci-dessous).
+- **`--prof <0-3>`** : dosage pédagogique, de la leçon sans questions (0) à la leçon socratique où l'étudiant prédit chaque démo (3) ; `2` par défaut (`references/prof.md`).
 - **`--work`** : fiche de travail rapide au lieu d'une leçon (description, syntaxe, liens, exemple, exemple concret). Si `--work` est présent, **lis `references/doc-work.md` et suis-le à la place de tout le reste de ce fichier**.
 - **`--web`** : appuie la leçon sur une recherche web. **Sans `--web`, pas de recherche web** : la leçon part de tes connaissances, des pages `man` locales et de ce que tu vérifies en exécutant du code. C'est plus rapide, et souvent suffisant pour les bases du C et d'Unix, qui bougent peu.
 
-Exemples : `/42 doc malloc` (intermédiaire, sans web), `/42 doc --expert --web les signaux`, `/42 doc --web --beginner les pointeurs`, `/42 doc --work malloc`, `/42 doc --work --web print python`.
+Exemples : `/42 doc malloc` (niveau évalué, sans web), `/42 doc --prof 3 les pointeurs`, `/42 doc --expert --web les signaux`, `/42 doc --web --beginner les pointeurs`, `/42 doc --work malloc`, `/42 doc --work --web print python`.
 
 Annonce les options retenues en une ligne sous le titre : « Niveau : intermédiaire · sans recherche web ».
 
@@ -30,7 +31,7 @@ L'étudiant choisit le niveau de la leçon avec une option placée avant le suje
 /42 doc --expert <sujet>
 ```
 
-**Sans option, le niveau est `--intermediate`.** L'option peut être en majuscules ou minuscules ; si elle apparaît ailleurs dans les arguments (après le sujet, par exemple), reconnais-la quand même et retire-la du sujet. Une option inconnue (`--advanced`, `--noob`) : prends le niveau le plus proche s'il est évident, sinon `--intermediate`, et dis-le en une ligne au début.
+**Sans option, le niveau vient d'un court diagnostic** (1–3 questions, voir `references/prof.md`), sauf si le contexte le dit déjà ou avec `--work`/`--prof 0` ; si l'étudiant le saute, le niveau est `--intermediate`. L'option peut être en majuscules ou minuscules ; si elle apparaît ailleurs dans les arguments (après le sujet, par exemple), reconnais-la quand même et retire-la du sujet. Une option inconnue (`--advanced`, `--noob`) : prends le niveau le plus proche s'il est évident, sinon `--intermediate`, et dis-le en une ligne au début.
 
 Le niveau ne change **ni la structure** (les cinq parties restent), **ni l'exigence de recherche et de vérification** : il change la profondeur, le vocabulaire, ce qu'on suppose acquis et le type de démo. L'idée : un débutant décroche si on lui parle de cache CPU avant qu'il sache ce qu'est un pointeur ; un expert s'ennuie si on lui réexplique la stack avec une pile d'assiettes.
 

@@ -27,7 +27,7 @@ Ses constats sont des faits : reprends-les tels quels dans le rapport, sans les 
 Lis SKILL.md et les fichiers concernés (tout, pour un audit complet). Cherche ce que le script ne voit pas :
 
 - **Contradictions** : deux fichiers qui disent l'inverse (une règle de la Norme différente entre `norm.md` et un mode, un comportement par défaut annoncé différemment dans SKILL.md et dans le fichier du mode, la règle de l'easter-egg appliquée différemment).
-- **Options** : chaque option commune (niveau, `--work`, `--web`) est-elle prise en compte dans chaque mode, ou explicitement déclarée sans objet ?
+- **Options** : chaque option commune (niveau, `--prof`, `--work`, `--web`, `--from`) est-elle prise en compte dans chaque mode, ou explicitement déclarée sans objet ?
 - **Règles 42 périmées** : une affirmation sur 42 (Norme, cursus, projets, examens) qui contredit `references/kb/` ou qui n'a pas de source.
 - **Instructions mortes ou floues** : une consigne qu'aucun cas réel ne déclenche, une consigne ambiguë qu'on peut lire de deux façons, un format de sortie qui n'est pas défini.
 - **Doublons** : la même consigne répétée dans plusieurs fichiers (risque de divergence) ; propose de la garder à un seul endroit.

@@ -6,6 +6,8 @@ Skill Claude Code d'assistance pédagogique pour l'École 42 (`/42 <mode> [optio
 
 Exemples : `/42 doc --work malloc`, `/42 doc --work --from c dictionnaire python`, `/42 err "<message>"`, `/42 vs list tuple`, `/42 cheat gdb`, `/42 test ft_atoi`, `/42 q quel header pour write`, `/42 review ./libft`, `/42 summary --exercice ex03`, `/42 summary --project minishell`, `/42 exam`, `/42 help`.
 
+**Plus ou moins prof : `--prof 0-3`.** Sans option de niveau, le skill commence par évaluer le tien (1 à 3 questions courtes), puis te fait chercher plutôt que de te donner la réponse. `--prof` règle ce dosage : `0` répond directement, `1` explique et vérifie, `2` (défaut) évalue ton niveau et te fait chercher ce qui se trouve facilement, `3` (ou `--prof` seul) prof exigeant, socratique. Exemples : `/42 debug --prof 3 ./get_next_line`, `/42 doc --prof 0 realloc`.
+
 ## Installation
 
 ### Dans le chat claude.ai (le plus simple)

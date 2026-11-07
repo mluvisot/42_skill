@@ -61,7 +61,7 @@ for mode in table_modes:
     if mode not in desc:
         add("ATTENTION", f"mode {mode} : absent de la description (il risque de ne pas déclencher le skill)")
 ref_modes = sorted(f[:-3] for f in os.listdir(os.path.join(ROOT, "references"))
-                   if f.endswith(".md") and f not in ("norm.md", "doc-work.md"))
+                   if f.endswith(".md") and f not in ("norm.md", "doc-work.md", "prof.md"))
 for mode in ref_modes:
     if mode not in table_modes:
         add("ATTENTION", f"references/{mode}.md : aucun mode correspondant dans la table de SKILL.md")
